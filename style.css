@@ -1,0 +1,99 @@
+body {
+
+	font-family: sans-serif;
+	background-image: url("img/escola.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+#app {
+	background-color: rgba(0, 0, 0, 0.8);
+	position:absolute; 
+	display:flex; 
+	height:100%; 
+	width:100%;
+	color: azure;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#text{
+	padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#title{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+#init{
+	background-color: rgb(235, 235, 235);
+	color:rgba(0, 0, 0, 0.8);
+	font-size: 24px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#init img{
+	height: 24px;
+}
+
+#quest{
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+button{
+	transition: all .3s cubic-bezier(0.5,-1,0.5,2);
+	border-radius: 12px;
+}
+
+button:hover{
+	cursor: pointer;
+	transform: scale(1.1)
+}
+
+.opt{
+	background-color: rgb(235, 235, 235);
+	color:rgba(0, 0, 0, 0.8);
+	width: 40%;
+	font-size: 24px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.result{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+
+.dataImg img {
+	margin: 10px;
+	max-width: 49%;
+}
+
+.dataImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.data{
+	padding: 2%;
+	background-color: rgba(90, 90, 90, 0.7);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
