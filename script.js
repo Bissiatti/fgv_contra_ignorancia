@@ -1,7 +1,9 @@
 let init = document.querySelector("#init")
 
-data = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et volutpat lacus, a ornare leo. Nulla facilisis nulla eu urna laoreet placerat. Sed justo nulla, egestas vitae leo at, scelerisque euismod libero. Integer eget purus eleifend lacus efficitur imperdiet. Ut gravida nisl ac felis faucibus, lobortis eleifend diam aliquet. Aenean quis varius ex, et venenatis urna. Vivamus dignissim quis tellus sit amet interdum. Maecenas lacus quam, semper a aliquam ac, fringilla non tellus. Nunc et mauris leo. Praesent ultrices viverra erat nec semper. Fusce rutrum porta ante, ac vehicula sem facilisis vitae. Duis ultrices tristique sapien, eget vulputate dolor maximus sed. Duis vehicula consequat mauris, vel ullamcorper enim. Mauris sit amet tincidunt metus. Phasellus faucibus mollis magna in tempus. Nullam accumsan, nibh ut eleifend dictum, mi lectus vehicula dolor, tempor semper lectus leo eget lorem."
-
+data1 = "A base de dados fornecida pela UNICEF, mostra a quantidade de homens e mulheres que concluíram cada etapa escolar, sendo elas “Primary”, “Lower secundary” e “Upper secundary”. Após análises, é possível perceber que alguns países possuem mais homens nos estudos, porém em outros as mulheres estão em maioria. Dessa forma, a média mundial é bem próxima entre os gêneros."
+data2 = "No primeiro gráfico, temos a média dos países do globo por grau escolar. Nele, é possível observar que na média as mulheres, proporcionalmente, terminam as três etapas escolares mais do que os homens. Importante observar que mesmo nos países a diferença não é considerável."
+data3 = "Já no segundo gráfico, temos, para cada país da base de dados, no eixo horizontal a proporção de garotos que concluíram o ensino e no eixo vertical a proporção de garotas que terminaram o ensino. É importante destacar que em alguns países, as mulheres estudam menos que os homens, porém na média a correlação é positiva, a medida que mais mulheres terminam os estudos, mais homens concluem." 
+data4 = "Portanto, os dados nos mostram que a proporção de mulheres que concluíram o ensino é maior que a proporção de homens que concluíram o ensino, comprovando que é um engano acreditar que os garotos tem mais condições de estudar do que as garotas."
 
 
 init.addEventListener("click",()=>{
@@ -10,7 +12,7 @@ init.addEventListener("click",()=>{
 	parent.innerHTML = ""
 	let quest = document.createElement("div")
 	quest.setAttribute("id","quest")
-	let text = document.createTextNode("No mundo, os homens estudam mais tempo do que as mulheres?")
+	let text = document.createTextNode("No mundo, os homens estudam proporcionalmente mais do que as mulheres?")
 	quest.appendChild(text)
 	parent.appendChild(quest)
 
@@ -30,8 +32,48 @@ init.addEventListener("click",()=>{
 		setTimeout(fun1, 4000); 
 		function fun1(){
 			parent.innerHTML = ""
+			let img1 = document.createElement("img")
+			img1.setAttribute("src","img/Imagem2.png")
+			let img2 = document.createElement("img")
+			img2.setAttribute("src","img/Imagem3.png")
+
+			let div = document.createElement("div")
+			div.setAttribute("class","data")
+			let div2 = document.createElement("div")
+			
+			div2.setAttribute("class","dataImg")
+			div2.appendChild(img1)
+			div2.appendChild(img2)
+
+
+			text = document.createTextNode(data1)
+			let span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data2)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data3)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data4)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			div.appendChild(div2)
+
+			parent.appendChild(div)
 		}
-		
 	})
 
 	let a2 = document.createElement("button")
@@ -57,16 +99,37 @@ init.addEventListener("click",()=>{
 
 			let div = document.createElement("div")
 			div.setAttribute("class","data")
-			text = document.createTextNode(data)
-			let span = document.createElement("span")
 			let div2 = document.createElement("div")
+			
 			div2.setAttribute("class","dataImg")
-
-			span.appendChild(text)
 			div2.appendChild(img1)
 			div2.appendChild(img2)
 
+
+			text = document.createTextNode(data1)
+			let span = document.createElement("span")
+			span.appendChild(text)
 			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data2)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data3)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data4)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
 			div.appendChild(div2)
 
 			parent.appendChild(div)
@@ -90,6 +153,47 @@ init.addEventListener("click",()=>{
 		setTimeout(fun1, 4000); 
 		function fun1(){
 			parent.innerHTML = ""
+			let img1 = document.createElement("img")
+			img1.setAttribute("src","img/Imagem2.png")
+			let img2 = document.createElement("img")
+			img2.setAttribute("src","img/Imagem3.png")
+
+			let div = document.createElement("div")
+			div.setAttribute("class","data")
+			let div2 = document.createElement("div")
+			
+			div2.setAttribute("class","dataImg")
+			div2.appendChild(img1)
+			div2.appendChild(img2)
+
+
+			text = document.createTextNode(data1)
+			let span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data2)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data3)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			text = document.createTextNode(data4)
+			span = document.createElement("span")
+			span.appendChild(text)
+			div.appendChild(span)
+			div.appendChild(document.createElement("br"))
+
+			div.appendChild(div2)
+
+			parent.appendChild(div)
 		}
 	})
 })
